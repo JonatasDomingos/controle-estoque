@@ -1,8 +1,8 @@
 import React from "react"
-import { useSelector, useDispatch, connect } from "react-redux"
+import { connect } from "react-redux"
+import { bindActionCreators } from "redux"
 import { logar } from "./actions/login-actions"
 import { cadastrar } from "./actions/cadastro-actions"
-import { bindActionCreators } from "redux"
 
 const arrayzinho = [
   {
@@ -50,10 +50,12 @@ const mapStateToProps = state => ({
   loginStates: state.loginState
 })
 
-const mapDispatchToProps = dispatch => ({
-  logar: numero => dispatch({ type: "INCREMENT", payload: numero }),
-  cadastrar: numero => dispatch({ type: "DECREMENT", payload: numero })
-})
+const mapDispatchToProps = dispatch => {
+  return{
+    ...bindActionCreators({logar, cadastrar}, dispatch), 
+    dispatch
+  }
+}
 
 export default connect(
   mapStateToProps,
