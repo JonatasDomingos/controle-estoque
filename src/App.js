@@ -51,12 +51,8 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  logar: numero => {
-    dispatch({ type: "INCREMENT", payload: numero })
-  },
-  cadastrar: numero => {
-    dispatch({ type: "DECREMENT", payload: numero })
-  }
+  logar: numero => dispatch({ type: "INCREMENT", payload: numero }),
+  cadastrar: numero => dispatch({ type: "DECREMENT", payload: numero })
 })
 
 export default connect(
