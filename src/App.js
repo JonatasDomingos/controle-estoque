@@ -6,9 +6,9 @@ const App = () => {
   <Router>
     <div className='App'>
       <Switch>
-        <Route path='/' component={Home}/>
+        {/* <Route path='/' component={Home}/>
         <Route path='/usuario/login' component={Login}/>
-        <Route path='/usuario/cadastro' component={Cadastro}/>
+        <Route path='/usuario/cadastro' component={Cadastro}/> */}
       </Switch>
     </div>
   </Router>
