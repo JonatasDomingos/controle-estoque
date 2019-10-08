@@ -2,7 +2,7 @@ import React from 'react'
 
 const Cadastro = () => (
     <div>
-      <p>Tem cadastro?</p>
+      <p>Tem cadastroo?</p>
     </div>
 )
 
