@@ -1,9 +1,8 @@
 import React from 'react'
+import { Segment, Button} from 'semantic-ui-react'
 
 const Home = () => (
-    <div>
-      <p>Tem home?</p>
-    </div>
+	<div>aa</div>
 )
 
 export default Home
